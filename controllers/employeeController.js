@@ -26,7 +26,7 @@ exports.add = {
       if(err){
         return reply(err);
       }else{
-        return newEmp;
+        return reply(newEmp);
       }
     });
   }
@@ -53,6 +53,7 @@ exports.update = {
           if(err){
             return reply(err);
           }
+          return reply('ok')
         });
     });
   }
